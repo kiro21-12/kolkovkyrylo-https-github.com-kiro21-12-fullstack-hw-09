@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &__nav {
+    margin-left: auto; // 🔥 ВАЖНО
+    display: flex;
+    gap: 32px;
+  }
+}
+.header__logo {
+  width: 160px;
+  padding-top: 30px;
+}
+.header__nav {
+  display: flex;
+  gap: 32px;
+  padding-top: 54px;
+  margin-left: auto;
+}
+.header__link {
+  color: #85AAAB;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #6DE1E3;
+}
+
+.header__link.active {
+  color: #6DE1E3;
+  border-bottom: 2px solid #6DE1E3;
+}
+.hero__btn {
+  width: 250px;
+  height: 48px;
+  background: #2D5E5E;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background: #244d4d;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: auto;
+
+  span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+}
